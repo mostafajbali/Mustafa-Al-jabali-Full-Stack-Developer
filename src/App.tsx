@@ -10,6 +10,7 @@ import { ProjectDetailView } from './components/ProjectDetailView';
 import { AdminLogin } from './components/AdminLogin';
 import { AdminDashboard, AdminTab } from './components/AdminDashboard';
 import { I18nProvider } from './i18n';
+import initialPortfolioData from '../data/portfolio_db.json';
 
 type AppRoute =
   | { view: 'home' }
@@ -81,11 +82,18 @@ function resolveInitialRouteFromLocation(): AppRoute {
 
 export function AppContent() {
   const [route, setRoute] = useState<AppRoute>(() => resolveInitialRouteFromLocation());
-  const [publicProjects, setPublicProjects] = useState<Project[]>([]);
+  const [publicProjects, setPublicProjects] = useState<Project[]>(() =>
+    Array.isArray(initialPortfolioData.projects)
+      ? (initialPortfolioData.projects as unknown as Project[])
+      : []
+  );
   const [adminProjects, setAdminProjects] = useState<Project[]>([]);
   const [mediaAssets, setMediaAssets] = useState<MediaAsset[]>([]);
-  const [settings, setSettings] = useState<DeveloperSettings>(DEFAULT_SETTINGS);
-  const [loading, setLoading] = useState<boolean>(true);
+  const [settings, setSettings] = useState<DeveloperSettings>(() => ({
+    ...DEFAULT_SETTINGS,
+    ...((initialPortfolioData.settings || {}) as unknown as DeveloperSettings),
+  }));
+  const [loading, setLoading] = useState<boolean>(false);
 
   // Auth Session State
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
