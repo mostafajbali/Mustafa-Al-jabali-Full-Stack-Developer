@@ -5,6 +5,14 @@
 
 ---
 
+## 🌐 رابط الموقع المباشر والحي (Live Website Demo)
+🚀 **[اضغط هنا لفتح موقع المهندس مصطفى الجبالي مباشرة](https://mostafajbali.github.io/Mustafa-Al-jabali-Full-Stack-Developer/)**
+
+رابط الموقع:
+`https://mostafajbali.github.io/Mustafa-Al-jabali-Full-Stack-Developer/`
+
+---
+
 ## 🌟 الميزات الرئيسية (Key Features)
 
 - **هوية بصرية تقنية حديثة (Cyber-Tech & Developer Palette)**: تصميم احترافي بشبكة هندسية دقيقة وألوان تقنية متناسقة.
