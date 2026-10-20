@@ -66,6 +66,16 @@ function resolveInitialRouteFromLocation(): AppRoute {
     if (slug) return { view: 'project', slugOrId: slug };
   }
 
+  if (hash.startsWith('#project/')) {
+    const slug = hash.replace('#project/', '').trim();
+    if (slug) return { view: 'project', slugOrId: slug };
+  }
+
+  if (hash.startsWith('#/project/')) {
+    const slug = hash.replace('#/project/', '').trim();
+    if (slug) return { view: 'project', slugOrId: slug };
+  }
+
   return { view: 'home' };
 }
 
@@ -88,15 +98,8 @@ export function AppContent() {
   useEffect(() => {
     const handleLocationChange = () => {
       const next = resolveInitialRouteFromLocation();
-      if (next.view === 'admin') {
-        setRoute(next);
-      } else if (
-        window.location.pathname === '/' &&
-        !window.location.hash.toLowerCase().includes('admin') &&
-        !window.location.search.toLowerCase().includes('admin')
-      ) {
-        setRoute((prev) => (prev.view === 'admin' || prev.view === 'login' ? { view: 'home' } : prev));
-      }
+      setRoute(next);
+      window.scrollTo({ top: 0, behavior: 'instant' });
     };
 
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -209,8 +212,17 @@ export function AppContent() {
   };
 
   const handleReturnToPublicSite = () => {
-    window.history.pushState({}, '', '/');
+    if (window.location.hash) {
+      window.history.pushState('', document.title, window.location.pathname + window.location.search);
+    }
     setRoute({ view: 'home' });
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  };
+
+  const handleSelectProject = (slugOrId: string) => {
+    window.location.hash = `project/${slugOrId}`;
+    setRoute({ view: 'project', slugOrId });
+    window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
   const handleLoginSuccess = async (
@@ -253,7 +265,7 @@ export function AppContent() {
           allProjects={publicProjects}
           settings={settings}
           onBack={handleReturnToPublicSite}
-          onSelectProject={(slugOrId) => setRoute({ view: 'project', slugOrId })}
+          onSelectProject={handleSelectProject}
           isAuthenticated={isAuthenticated}
           onEditInCms={(proj) => {
             window.history.pushState({}, '', '/admin');
@@ -296,9 +308,7 @@ export function AppContent() {
         onRefresh={refreshAll}
         onLogout={handleLogout}
         onViewLiveSite={handleReturnToPublicSite}
-        onInspectPublicProject={(slugOrId) =>
-          setRoute({ view: 'project', slugOrId })
-        }
+        onInspectPublicProject={handleSelectProject}
         initialTab={route.tab || 'overview'}
         initialEditingProject={route.editProject || null}
       />
@@ -311,7 +321,7 @@ export function AppContent() {
       settings={settings}
       projects={publicProjects}
       loading={loading}
-      onSelectProject={(slugOrId) => setRoute({ view: 'project', slugOrId })}
+      onSelectProject={handleSelectProject}
       onOpenAdmin={handleOpenAdmin}
       isAuthenticated={isAuthenticated}
     />

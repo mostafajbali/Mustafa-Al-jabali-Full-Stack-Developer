@@ -514,8 +514,20 @@ export const PublicPortfolio: React.FC<PublicPortfolioProps> = ({
                           {project.techStack.slice(0, 3).join(' · ')}
                         </div>
 
-                        <div className="flex items-center gap-2 shrink-0">
-                          {project.liveUrl && project.liveUrl.startsWith('http') ? (
+                        <div className="flex flex-wrap items-center gap-2 shrink-0">
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              onSelectProject(project.slug);
+                            }}
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg tech-btn-secondary text-xs font-bold text-sky-100 hover:text-white cursor-pointer"
+                          >
+                            <span>{isAr ? 'تفاصيل ومعاينة' : 'Case Study & Demo'}</span>
+                            <ArrowUpRight className="w-3.5 h-3.5 text-[#00F0FF]" />
+                          </button>
+
+                          {project.liveUrl && project.liveUrl.startsWith('http') && (
                             <a
                               href={project.liveUrl}
                               target="_blank"
@@ -523,14 +535,9 @@ export const PublicPortfolio: React.FC<PublicPortfolioProps> = ({
                               onClick={(e) => e.stopPropagation()}
                               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg tech-btn-primary text-xs font-bold whitespace-nowrap shadow-md cursor-pointer"
                             >
-                              <span>{isAr ? 'زيارة الموقع ↗' : 'Live Site ↗'}</span>
+                              <span>{isAr ? 'الموقع الحي ↗' : 'Live Site ↗'}</span>
                               <ExternalLink className="w-3 h-3" />
                             </a>
-                          ) : (
-                            <span className="inline-flex items-center gap-1 text-xs font-bold text-[#00F0FF]">
-                              <span>{isAr ? 'معاينة المشروع' : 'Interactive Demo'}</span>
-                              <ArrowUpRight className="w-3.5 h-3.5" />
-                            </span>
                           )}
                         </div>
                       </div>
