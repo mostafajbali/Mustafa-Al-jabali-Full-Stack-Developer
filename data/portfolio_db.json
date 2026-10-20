@@ -1,0 +1,296 @@
+{
+  "settings": {
+    "fullName": "Mustafa Al-Jabali",
+    "arabicName": "مصطفى الجبالي",
+    "headline": "I'm Mustafa Al-Jabali — Full-Stack Web Developer",
+    "subheadline": "Hello, I'm Mustafa Al-Jabali, a Full-Stack Web Developer specializing in designing and building modern, fast, and 100% responsive websites and web applications — from interactive Frontend UI/UX to scalable Backend APIs and Databases.",
+    "bio": "I'm Mustafa Al-Jabali, a Full-Stack Web Developer specializing in building complete websites, e-commerce stores, digital restaurant systems, and custom admin dashboards engineered to be 100% responsive across mobile, tablet, laptop, and desktop screens.",
+    "location": "Palestine · Available Worldwide (Remote)",
+    "availabilityText": "Available for Full-Stack Web Projects",
+    "yearsExperience": "+5 سنوات",
+    "projectsDelivered": "+35 مشروع",
+    "uptimeMetric": "100% Responsive",
+    "email": "mostafaaljabaly9@gmail.com",
+    "whatsappNumber": "+970595845086",
+    "whatsappMessage": "Hello Eng. Mustafa, I visited your portfolio website and would like to discuss a web development project.",
+    "githubUrl": "https://github.com",
+    "linkedinUrl": "https://linkedin.com",
+    "twitterUrl": "https://x.com",
+    "resumeUrl": "#contact",
+    "skills": [
+      {
+        "category": "Frontend Web Development",
+        "items": [
+          "React.js & Next.js",
+          "TypeScript & JavaScript (ES6+)",
+          "HTML5 & CSS3",
+          "Tailwind CSS & Bootstrap",
+          "Responsive Design (Mobile, Tablet & Desktop)",
+          "Modern UI/UX Implementation"
+        ]
+      },
+      {
+        "category": "Backend & Databases",
+        "items": [
+          "Node.js & Express.js",
+          "RESTful APIs & Backend Architecture",
+          "PostgreSQL & MySQL",
+          "MongoDB & Firebase",
+          "Authentication & Security (JWT / OAuth)",
+          "Custom Admin Dashboards & CMS"
+        ]
+      },
+      {
+        "category": "Web Deployment & Tools",
+        "items": [
+          "Git & GitHub Version Control",
+          "Cloud Hosting & Server Deployment",
+          "Web Performance & Speed Optimization",
+          "Technical SEO Best Practices",
+          "Payment Gateways & Third-Party APIs",
+          "Clean, Scalable & Maintainable Code"
+        ]
+      }
+    ],
+    "seoTitle": "Mustafa Al-Jabali — Full-Stack Web Developer",
+    "seoDescription": "Portfolio of Mustafa Al-Jabali — Full-Stack Web Developer specializing in modern websites, e-commerce stores, and web applications."
+  },
+  "projects": [
+    {
+      "id": "proj-rawdati-platform",
+      "slug": "rawdati-kindergarten-platform",
+      "title": "Rawdati — Educational Platform & Kindergarten Portal",
+      "subtitle": "Interactive Early Childhood Learning Portal, Online Admission System & Parent Dashboard",
+      "category": "Educational Platforms & Portals",
+      "status": "published",
+      "featured": true,
+      "thumbnail": "builtin://rawdati-cover",
+      "videoUrl": "",
+      "summary": "A modern, highly responsive educational web platform engineered for kindergarten and early childhood centers. Features interactive learning activity showcases, digital student admission and enrollment workflows, parent-teacher communication portal, and a playful, touch-friendly UI optimized for families across all devices.",
+      "description": "### Project Overview\n**Rawdati (روضتي)** is an educational web platform and digital portal designed to connect kindergartens, nurseries, and early learning academies with parents and families. Deployed live on Vercel at [rawdati-website.vercel.app](https://rawdati-website.vercel.app/), the platform delivers an engaging visual presentation of educational programs alongside seamless digital admission workflows.\n\n### Key Full-Stack Features\n- **Responsive Visual Storytelling**: Bright, joyful, and touch-optimized interface presenting early childhood curriculums, creative arts, physical activities, and language phonics.\n- **Digital Admission & Enrollment Engine**: Step-by-step online registration form allowing parents to enroll their children, select age cohorts, upload required health certificates, and schedule campus orientation tours.\n- **Parent & Faculty Communication Portal**: Centralized hub for daily learning schedules, photo activity diaries, lunch menus, and instant announcements.\n- **100% Responsive Architecture**: Built with modern web standards to ensure instant rendering and frictionless navigation across mobile smartphones, iPads, tablets, and large displays.",
+      "architectureNotes": "React.js & Next.js -> Tailwind CSS Responsive Layouts -> Serverless API Routes -> Cloud Storage CDN -> Deployed Live on Vercel Edge",
+      "client": "Rawdati Early Childhood Academy",
+      "role": "Full-Stack Web Developer",
+      "timeline": "2026",
+      "liveUrl": "https://rawdati-website.vercel.app/",
+      "repoUrl": "https://github.com",
+      "techStack": [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "Vercel Deployment",
+        "Responsive UX"
+      ],
+      "metrics": [
+        {
+          "label": "Online Admission Flow",
+          "value": "100% Digital",
+          "delta": "Fast Paperless Enrollment"
+        },
+        {
+          "label": "Screen Responsiveness",
+          "value": "100%",
+          "delta": "Mobile, Tablet & Desktop"
+        },
+        {
+          "label": "Page Load Performance",
+          "value": "0.6s",
+          "delta": "Optimized Core Web Vitals"
+        },
+        {
+          "label": "Production Hosting",
+          "value": "Vercel Live",
+          "delta": "rawdati-website.vercel.app"
+        }
+      ],
+      "gallery": [
+        {
+          "id": "gal-rawdati-1",
+          "url": "builtin://rawdati-cover",
+          "type": "image",
+          "caption": "Rawdati Kindergarten responsive landing page, interactive curriculum showcase, and enrollment registration portal."
+        },
+        {
+          "id": "gal-rawdati-2",
+          "url": "builtin://rawdati-portal",
+          "type": "image",
+          "caption": "Parent communication portal, daily activity schedule, and classroom photo diary."
+        }
+      ],
+      "createdAt": "2026-10-20T07:00:00.000Z",
+      "updatedAt": "2026-10-20T07:20:00.000Z"
+    },
+    {
+      "id": "proj-ecommerce-store",
+      "slug": "novamart-ecommerce-shopping-platform",
+      "title": "NovaMart — Full-Stack E-Commerce & Online Shopping Store",
+      "subtitle": "Complete Online Shopping Storefront, Smart Cart, Stripe Checkout & Inventory Admin CMS",
+      "category": "E-Commerce & Online Shopping",
+      "status": "published",
+      "featured": false,
+      "thumbnail": "builtin://ecommerce-store",
+      "videoUrl": "",
+      "summary": "A complete full-stack e-commerce and online shopping platform built with Next.js, TypeScript, and Node.js. Features high-speed product discovery, instant category filtering, interactive shopping cart, secure Stripe payment gateway, and a comprehensive merchant dashboard for inventory and order management.",
+      "description": "### Project Overview\n**NovaMart E-Commerce** is a modern full-stack online shopping platform engineered to deliver a fast, frictionless buying experience across mobile, tablet, and desktop devices while giving store owners complete control over products, inventory, and orders.\n\n### Key Full-Stack Features\n- **Responsive Storefront & Smart Filtering**: Dynamic product catalog with instant search, category segmentation, product ratings, and a live slide-over shopping bag.\n- **Multi-Gateway Checkout**: Integrated with **Stripe API**, **Apple Pay**, and Cash on Delivery with automated order confirmation and shipment status tracking.\n- **Merchant Admin & Inventory Dashboard**: Real-time sales analytics, low-stock alerts, coupon management, and one-click order fulfillment workflows.",
+      "architectureNotes": "Next.js & React Frontend -> Node.js & Express REST API -> PostgreSQL Database + Redis Cache -> Stripe Payment Webhook Engine",
+      "client": "NovaMart Retail Group",
+      "role": "Full-Stack Web Developer",
+      "timeline": "2026",
+      "liveUrl": "#case-study",
+      "repoUrl": "https://github.com",
+      "techStack": [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "PostgreSQL",
+        "Stripe API"
+      ],
+      "metrics": [
+        {
+          "label": "Storefront Load Time",
+          "value": "0.7s",
+          "delta": "Core Web Vitals"
+        },
+        {
+          "label": "Checkout Conversion",
+          "value": "+38%",
+          "delta": "One-page cart flow"
+        },
+        {
+          "label": "Screen Responsiveness",
+          "value": "100%",
+          "delta": "Mobile, Tablet & Desktop"
+        },
+        {
+          "label": "Payment Security",
+          "value": "Stripe / SSL",
+          "delta": "PCI-DSS Compliant"
+        }
+      ],
+      "gallery": [
+        {
+          "id": "gal-ecom-1",
+          "url": "builtin://ecommerce-store",
+          "type": "image",
+          "caption": "NovaMart customer storefront, product catalog grid, and live shopping bag drawer."
+        },
+        {
+          "id": "gal-ecom-2",
+          "url": "builtin://ecommerce-admin",
+          "type": "image",
+          "caption": "Merchant Admin Dashboard for real-time order fulfillment, revenue analytics, and inventory control."
+        }
+      ],
+      "createdAt": "2026-10-18T10:00:00.000Z",
+      "updatedAt": "2026-10-19T05:00:00.000Z"
+    },
+    {
+      "id": "proj-restaurant-menu",
+      "slug": "gusto-restaurant-menu-management-system",
+      "title": "GustoQR — Restaurant Digital Menu & Order Management System",
+      "subtitle": "Interactive QR Table Menu, Online Food Ordering, Kitchen Display (KDS) & Menu Admin Dashboard",
+      "category": "Restaurant & POS Systems",
+      "status": "published",
+      "featured": false,
+      "thumbnail": "builtin://restaurant-menu",
+      "videoUrl": "",
+      "summary": "An end-to-end digital restaurant menu and order management platform allowing dine-in and delivery customers to scan a table QR code, browse photo-rich dishes, customize items, and send orders directly to the live Kitchen Display System (KDS), paired with an intuitive Admin CMS for managing categories, dishes, and prices in real time.",
+      "description": "### Project Overview\n**GustoQR Restaurant Menu System** modernizes restaurant and cafe operations by connecting QR table ordering, delivery menus, kitchen preparation screens, and menu administration into one seamless web platform.\n\n### Key Full-Stack Features\n- **Interactive Mobile QR Menu**: Customers scan the table QR code to browse appetizing dishes with photos, calories, and preparation times, customize add-ons, and submit orders without waiting.\n- **Real-Time Restaurant Menu Manager (Admin CMS)**: Restaurant managers can add new dishes, update prices, launch daily specials, or mark items as sold-out with instant synchronization.\n- **Live Kitchen Display System (KDS)**: Orders appear immediately on the kitchen screen via **WebSockets** with preparation timers and table status tracking.",
+      "architectureNotes": "React & TypeScript Mobile-First Menu -> Node.js & Express API -> MongoDB Atlas -> WebSocket Real-Time Kitchen Display (KDS)",
+      "client": "Gusto Hospitality & Restaurants",
+      "role": "Full-Stack Web Developer",
+      "timeline": "2026",
+      "liveUrl": "#case-study",
+      "repoUrl": "https://github.com",
+      "techStack": [
+        "React.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "WebSockets"
+      ],
+      "metrics": [
+        {
+          "label": "QR Menu Load Speed",
+          "value": "0.5s",
+          "delta": "Zero app install needed"
+        },
+        {
+          "label": "Order Turnaround Time",
+          "value": "-60%",
+          "delta": "Direct to Kitchen KDS"
+        },
+        {
+          "label": "Mobile & Tablet UI",
+          "value": "100%",
+          "delta": "Touch-optimized UX"
+        },
+        {
+          "label": "Menu Price Updates",
+          "value": "Realtime",
+          "delta": "Instant sync across tables"
+        }
+      ],
+      "gallery": [
+        {
+          "id": "gal-rest-1",
+          "url": "builtin://restaurant-menu",
+          "type": "image",
+          "caption": "Interactive digital restaurant menu with category filtering and live Table #08 order summary."
+        },
+        {
+          "id": "gal-rest-2",
+          "url": "builtin://restaurant-kds",
+          "type": "image",
+          "caption": "Live Kitchen Display System (KDS) and Restaurant Menu Management console."
+        }
+      ],
+      "createdAt": "2026-10-18T12:00:00.000Z",
+      "updatedAt": "2026-10-19T05:05:00.000Z"
+    }
+  ],
+  "media": [
+    {
+      "id": "media-rawdati-1",
+      "filename": "rawdati_kindergarten_platform.svg",
+      "originalName": "Rawdati Educational Platform.svg",
+      "url": "builtin://rawdati-cover",
+      "mimeType": "image/svg+xml",
+      "type": "image",
+      "sizeBytes": 32000,
+      "dimensions": "1200x675",
+      "altText": "Rawdati Kindergarten & Early Childhood Educational Platform",
+      "uploadedAt": "2026-10-20T07:20:00.000Z"
+    },
+    {
+      "id": "media-ecom-1",
+      "filename": "novamart_ecommerce_storefront.svg",
+      "originalName": "NovaMart E-Commerce Storefront.svg",
+      "url": "builtin://ecommerce-store",
+      "mimeType": "image/svg+xml",
+      "type": "image",
+      "sizeBytes": 28400,
+      "dimensions": "1200x675",
+      "altText": "NovaMart E-Commerce & Online Shopping Storefront",
+      "uploadedAt": "2026-10-19T05:00:00.000Z"
+    },
+    {
+      "id": "media-rest-1",
+      "filename": "gusto_restaurant_qr_menu.svg",
+      "originalName": "GustoQR Restaurant Menu System.svg",
+      "url": "builtin://restaurant-menu",
+      "mimeType": "image/svg+xml",
+      "type": "image",
+      "sizeBytes": 26900,
+      "dimensions": "1200x675",
+      "altText": "GustoQR Restaurant Digital Menu & POS System",
+      "uploadedAt": "2026-10-19T05:05:00.000Z"
+    }
+  ]
+}

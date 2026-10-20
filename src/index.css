@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Cairo', 'Plus Jakarta Sans', monospace;
+    --tech-bg-deep: #030712;
+    --tech-bg-surface: #071020;
+    --tech-bg-elevated: #0B172E;
+    --tech-cyan: #00F0FF;
+    --tech-blue: #38BDF8;
+    --tech-cobalt: #2563EB;
+    --tech-emerald: #00FF9D;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #030712;
+    color: #F0F9FF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: normal;
+  }
+
+  [dir="rtl"] body,
+  [dir="rtl"] .font-mono {
+    font-family: 'Cairo', 'Plus Jakarta Sans', 'JetBrains Mono', sans-serif;
+    letter-spacing: 0 !important;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Technical Blueprint & Matrix Grid Canvas */
+.tech-canvas {
+  background-color: #030712;
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(0, 240, 255, 0.11) 0%, transparent 40%),
+    radial-gradient(circle at 85% 20%, rgba(37, 99, 235, 0.14) 0%, transparent 45%),
+    radial-gradient(circle at 50% 85%, rgba(0, 255, 157, 0.07) 0%, transparent 45%),
+    linear-gradient(to right, rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+  background-attachment: fixed;
+}
+
+/* Secondary Technical Section Surface */
+.tech-section-alt {
+  background: linear-gradient(180deg, rgba(6, 14, 29, 0.88) 0%, rgba(3, 8, 20, 0.94) 100%);
+  border-color: rgba(56, 189, 248, 0.18);
+}
+
+/* Sticky Technical Header */
+.tech-header {
+  background: rgba(3, 8, 20, 0.86);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 240, 255, 0.06);
+}
+
+/* High-Precision Technical Panel / Card */
+.tech-panel {
+  background: linear-gradient(155deg, rgba(11, 23, 46, 0.9) 0%, rgba(5, 11, 24, 0.96) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  box-shadow:
+    0 10px 30px -10px rgba(2, 6, 23, 0.8),
+    inset 0 1px 0 0 rgba(0, 240, 255, 0.14);
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.tech-panel-interactive:hover {
+  border-color: rgba(0, 240, 255, 0.6);
+  box-shadow:
+    0 14px 40px -10px rgba(0, 240, 255, 0.2),
+    0 0 20px rgba(37, 99, 235, 0.18),
+    inset 0 1px 0 0 rgba(0, 240, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Technical Headline Gradient */
+.tech-title-gradient {
+  background: linear-gradient(95deg, #FFFFFF 0%, #E0F2FE 35%, #38BDF8 72%, #00FF9D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Technical Primary Action Button (Cyber Cyan -> Electric Blue) */
+.tech-btn-primary {
+  background: linear-gradient(135deg, #00F0FF 0%, #38BDF8 50%, #0284C7 100%);
+  color: #020617;
+  box-shadow:
+    0 0 22px rgba(0, 240, 255, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  transition: all 0.2s ease;
+}
+
+.tech-btn-primary:hover {
+  background: linear-gradient(135deg, #5CEEFF 0%, #38BDF8 45%, #0EA5E9 100%);
+  box-shadow:
+    0 0 32px rgba(0, 240, 255, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* Technical Emerald Action Button (Terminal Matrix Emerald) */
+.tech-btn-emerald {
+  background: linear-gradient(135deg, #00FF9D 0%, #10B981 55%, #059669 100%);
+  color: #020617;
+  box-shadow:
+    0 0 22px rgba(0, 255, 157, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  transition: all 0.2s ease;
+}
+
+.tech-btn-emerald:hover {
+  background: linear-gradient(135deg, #4DFFBA 0%, #10B981 50%, #059669 100%);
+  box-shadow:
+    0 0 32px rgba(0, 255, 157, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* Secondary Technical Outline Button */
+.tech-btn-secondary {
+  background: rgba(11, 23, 46, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.32);
+  color: #E0F2FE;
+  box-shadow: inset 0 1px 0 rgba(0, 240, 255, 0.12);
+  transition: all 0.2s ease;
+}
+
+.tech-btn-secondary:hover {
+  background: rgba(14, 34, 68, 0.9);
+  border-color: rgba(0, 240, 255, 0.65);
+  color: #FFFFFF;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.18);
+}
+
+@keyframes subtleGlow {
+  0%, 100% {
+    box-shadow: 0 0 18px rgba(0, 255, 157, 0.4), 0 0 38px rgba(0, 240, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(0, 255, 157, 0.68), 0 0 54px rgba(0, 240, 255, 0.35);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes bounceSubtle {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+.whatsapp-glow {
+  animation: subtleGlow 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s ease-in-out infinite;
+}
+
+.animate-bounce-subtle {
+  animation: bounceSubtle 0.4s ease-in-out;
+}
